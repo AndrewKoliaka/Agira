@@ -8,11 +8,17 @@ body {
 h1 {
     font-family: $ffPFAgoraSlabPro;
     font-size: 4em;
+    @include respond-to(tablet) {
+        font-size: 3em;
+    }
 }
 
 h2 {
     margin: 0;
     font-size: 3em;
+    @include respond-to(tablet) {
+        font-size: 1.5em;
+    }
 }
 
 a {
@@ -22,13 +28,18 @@ a {
     }
 }
 
+.popupVisibleBG {
+    opacity: .7;
+    background-color: gray;
+}
+
 .section {
-    &__title, &__subtitle {
+    &__title,
+    &__subtitle {
         width: 100%;
         text-align: center;
         text-transform: uppercase;
     }
-
     &__title {
         font-family: $ffPFAgoraSlabPro;
         font-weight: 400;
@@ -36,26 +47,51 @@ a {
             color: #ffffff;
         }
     }
-
     &__subtitle {
         font-family: $ffOpenSans-Semibold;
         font-size: .875em;
         letter-spacing: 3px;
-
         &--light {
             color: #ffffff;
         }
-
         &--gray {
             color: #959595;
         }
     }
-
     &__line {
         margin: auto;
         margin-top: 27px;
         width: 280px;
         height: 1px;
         background-color: #ffffff;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+    border: 1px solid #959595;
+    .order-form__input {
+        background-color: #f3f3f3;
+    }
+    .order-form__submit {
+        margin-top: 10px;
+        background-color: $orange;
+        border: none;
+    }
+    .section {
+        &__title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: .7em;
+            letter-spacing: 2px;
+        }
     }
 }

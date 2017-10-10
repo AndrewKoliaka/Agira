@@ -1,0 +1,53 @@
+.popup1 {
+    @extend .popup;
+
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid red;
+    z-index: 9999;
+    h2 {
+        font-family: $ffPFAgoraSlabPro;
+        font-size: 1.5em;
+        margin-bottom: 35px;
+    }
+
+    table {
+        border-collapse: collapse;
+        color: #666666;
+        td, th {
+            border: 1px solid gray;
+            padding: 10px;
+
+            @include respond-to(mobile){
+                td, th {
+                    padding: 0px;
+                }
+                
+            }
+        }
+
+        th {
+            font-family: $ffOpenSans-Regular;
+        }
+
+        td {
+            font-family: $ffPFAgoraSlabPro;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        color: black;
+        font-size: 2em;
+    }
+
+    @include respond-to(wide) {
+        width: 80%;
+    }
+
+}

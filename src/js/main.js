@@ -1,7 +1,6 @@
 $(document)
     .ready(function () {
-        $('.slider').slick();
-
+        $('.slider').slick({arrows: false});
 
         $('.control--left').click(function (event) {
             event.preventDefault();
@@ -33,4 +32,34 @@ $(document)
             });
 
         adaptiveToScreenWidth();
+
+        $('.solution__btn').click(function (event) {
+            event.preventDefault();
+            if ($('.popup1').hasClass('hidden')) {
+                $('.popup1').removeClass('hidden');
+            }
+        });
+
+        $('.close-btn').click(function (event) {
+            event.preventDefault();
+            $(this)
+                .parent()
+                .addClass('hidden');
+        });
+
+        $(window).click(function (event) {
+            console.log(event.target);
+            if (!$(event.target).hasClass('header__btn')) {
+                $('.popup2').addClass('hidden');
+            }
+        });
+
+        $('.header__btn').click(function (event) {
+            event.preventDefault();
+            $('.popup2').removeClass('hidden');
+        });
+
+        $('.popup2').click(function (event) {
+            event.stopPropagation();
+        });
     });

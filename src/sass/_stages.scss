@@ -27,6 +27,10 @@
         margin-left: 40px;
         color: #666666;
         background-color: #ffffff;
+
+        @include respond-to(tablet) {
+            padding: 10px;
+        }
     }
 }
 

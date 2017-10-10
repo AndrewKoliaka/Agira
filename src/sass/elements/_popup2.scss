@@ -1,0 +1,21 @@
+.popup2 {
+    @extend .popup;
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    .order-form__input {
+        margin-top: 10px;
+    }
+    .section__title {
+        margin-bottom: 20px;
+    }
+    .section__subtitle {
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
+}

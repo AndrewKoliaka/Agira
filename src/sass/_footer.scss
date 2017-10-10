@@ -23,6 +23,11 @@
         padding-top: 70px;
         padding-left: 40px;
         letter-spacing: 3px;
+        @include respond-to(tablet) {
+            & {
+                left: 10px;
+            }
+        }
     }
     &__text-bold {
         margin-top: 30px;
