@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+    font-family: $ffOpenSans-Regular;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: $ffPFAgoraSlabPro;
+    font-size: 4em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.section {
+    &__title, &__subtitle {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: $ffPFAgoraSlabPro;
+        font-weight: 400;
+        &--light {
+            color: #ffffff;
+        }
+    }
+
+    &__subtitle {
+        font-family: $ffOpenSans-Semibold;
+
+        &--light {
+            color: #ffffff;
+        }
+
+        &--gray {
+            color: #959595;
+        }
+    }
+}

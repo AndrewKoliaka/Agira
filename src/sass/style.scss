@@ -1,6 +1,6 @@
 //Подключение библиотек
 @import "../../node_modules/normalize.css/normalize";
-@import "../../node_modules/bootstrap-grid/dist/grid.min";
+// @import "../../node_modules/bootstrap-grid/dist/grid.min";
 
 
 
@@ -17,4 +17,8 @@
 
 
 //Подключение основных файлов
-@import "main";
+@import "base";
+@import "header";
+@import "recipes";
+@import "order";
+@import "form";
