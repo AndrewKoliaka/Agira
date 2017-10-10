@@ -43,6 +43,17 @@
             color: inherit;
         }
     }
+    .logo {
+        display: inline-block;
+        width: 137px;
+    }
+}
+
+.site-nav__menu-trigger {
+    position: absolute;
+    cursor: pointer;
+    top: -100px;
+    right: 10px;
 }
 
 .header-menu {
@@ -63,6 +74,37 @@
             color: inherit;
             text-decoration: none;
             border-bottom-color: $orange;
+        }
+    }
+    @media screen and (max-width: 1050px) {
+        &__el {
+            margin-left: 30px;
+        }
+    }
+    @include respond-to(tablet) {
+        & {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        &__el {
+            display: block;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            border-top: 1px solid whitesmoke;
+            margin: 20px 0;
+        }
+        &__link {
+            padding-top: 20px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-size: 1.2em;
+            &:hover {
+                text-decoration: none;
+                border-bottom-color: transparent;
+            }
         }
     }
 }
@@ -148,5 +190,17 @@
         right: 133px;
         bottom: -361px;
         z-index: 10;
+    }
+
+    @media screen and (max-width: 1050px) {
+        &:not(&--meat) {
+            display: none;
+        }
+
+        &--meat {
+            top: 50px;
+            height: 500px;
+            width: auto;
+        }
     }
 }

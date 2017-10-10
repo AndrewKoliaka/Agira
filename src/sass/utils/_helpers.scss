@@ -13,3 +13,27 @@
     display: table;
     clear: both;
 }
+
+.hidden-lg {
+    @include respond-to(wide) {
+        display: none;
+    }
+}
+
+.hidden-md {
+    @include respond-to(desktop) {
+        display: none;
+    }
+}
+
+.hidden-sm {
+    @include respond-to(tablet) {
+        display: none;
+    }
+}
+
+.hidden-xs {
+    @include respond-to(mobile) {
+        display: none;
+    }
+}
