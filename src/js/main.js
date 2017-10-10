@@ -68,4 +68,25 @@ $(document)
         $('.popup2__content').click(function (event) {
             event.stopPropagation();
         });
+
+
+        $('.js-send-form').on('click', function (event) {
+            event.preventDefault();
+            var $form = $(this).parents('form');
+
+            $.ajax({
+                url: '/send.php',
+                type: 'POST',
+                data: $form.serialize(),
+                success: function (data) {
+                    console.log(data);
+                    $form[0].reset();
+                    hidePopup('.popup2');
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+
+        })
     });
