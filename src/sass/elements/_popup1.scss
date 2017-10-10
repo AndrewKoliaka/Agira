@@ -16,6 +16,7 @@
             margin-top: 45px;
         }
     }
+
     table {
         border-collapse: collapse;
         color: #666666;
@@ -24,7 +25,7 @@
         th {
             border: 1px solid gray;
             padding: 10px;
-            @include respond-to(mobile) {
+            @include respond-to(tablet) {
                 font-size: .8em;
                 padding: 0;
             }

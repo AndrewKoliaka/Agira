@@ -82,8 +82,7 @@ br {
     z-index: 9999;
     min-height: 100%;
     min-width: 100%;
-    opacity: .99;
-    background-color: #959595;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .popup {
@@ -94,11 +93,10 @@ br {
     bottom: 0;
     margin: auto;
     border: 1px solid #959595;
-    opacity: 1;
-    @include respond-to(mobile){
+
+    @media screen and (max-width: 568px) {
         overflow: scroll;
     }
-
     .order-form__input {
         background-color: #f3f3f3;
     }
