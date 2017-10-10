@@ -2,10 +2,12 @@ $(document)
     .ready(function () {
 
         function hidePopup(selector) {
+            $('body').css('overflow', 'auto');
             $(selector).addClass('hidden');
         }
 
         function showPopup(selector) {
+            $('body').css('overflow', 'hidden');
             $(selector).removeClass('hidden');
         }
 
@@ -44,19 +46,20 @@ $(document)
 
         $('.solution__btn').click(function (event) {
             event.preventDefault();
-            if ($('.popup1').hasClass('hidden')) {
-                showPopup('.popup1');
+            var id = $(this).data('id');
+            if ($('.popup1').hasClass('hidden') && $('.solution-popup-' + id).length) {
+                showPopup('.solution-popup-' + id);
             }
         });
 
         $('.close-btn').click(function (event) {
             event.preventDefault();
-            hidePopup('.popup1');
+            hidePopup($(this).parents('.popup-wrapper'));
         });
 
         $(window).click(function (event) {
             if ($(event.target).hasClass('popup-wrapper')) {
-                hidePopup('.popup2')
+                hidePopup('.popup-wrapper')
             }
         });
 
@@ -82,6 +85,7 @@ $(document)
                     console.log(data);
                     $form[0].reset();
                     hidePopup('.popup2');
+                    showPopup('.popup-thank')
                 },
                 error: function (error) {
                     console.log(error);

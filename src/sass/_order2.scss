@@ -8,6 +8,10 @@
     padding-bottom: 70px;
     text-align: center;
 
+    @media screen and (max-width: 767px) {
+        padding: 40px 0;
+    }
+
     &__desc {
         margin-top: 30px;
         display: block;

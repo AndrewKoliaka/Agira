@@ -2,6 +2,10 @@
     position: relative;
     padding: 80px 0;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 0;
+    }
 }
 
 .slider {
@@ -11,6 +15,10 @@
 
 .slide {
     padding-top: 80px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+    }
     &__icon {
         display: block;
         margin: auto;
@@ -30,6 +38,11 @@
 
         @include respond-to(tablet) {
             padding: 10px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 }

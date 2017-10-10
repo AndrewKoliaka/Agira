@@ -37,19 +37,26 @@
             font-family: $ffPFAgoraSlabPro;
         }
     }
-    .close-btn {
-        position: absolute;
-        right: 20px;
-        top: 35px;
-        color: black;
-        font-size: 2em;
-        @include respond-to(tablet) {
-            top: 10px;
-        }
-    }
+
     @include respond-to(wide) {
         width: 70%;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: black;
+    font-size: 2em;
+
+    @include respond-to(tablet) {
+        top: 10px;
+    }
+
+    img {
+        display: block;
     }
 }
