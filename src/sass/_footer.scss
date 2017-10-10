@@ -1,0 +1,61 @@
+.section-map {
+    padding-top: 80px;
+}
+
+.map {
+    position: relative;
+    margin-top: 40px;
+    &:hover &__info {
+        visibility: hidden;
+    }
+    &__info {
+        position: absolute;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.09);
+        width: 277px;
+        height: 243px;
+        transition: all .2s;
+        top: 100px;
+        left: 300px;
+        text-align: left;
+        font-family: $ffOpenSans-Regular;
+        font-style: normal;
+        color: #666666;
+        font-size: .875em;
+        font-weight: 400;
+        padding-top: 70px;
+        padding-left: 40px;
+        letter-spacing: 3px;
+    }
+    &__text-bold {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: $ffOpenSans-Bold;
+    }
+}
+
+.footer {
+    background-color: $orange;
+    color: #ffffff;
+    height: 118px;
+    .logo {
+        width: auto;
+        height: 60px;
+        margin: auto;
+    }
+    &__address-wrapper {
+        float: right;
+    }
+    &__address {
+        margin-top: 35px;
+        font-family: $ffPFAgoraSlabPro;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .info {
+        line-height: 118px;
+        a {
+            color: #ffffff;
+        }
+    }
+}

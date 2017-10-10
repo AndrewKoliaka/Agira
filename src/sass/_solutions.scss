@@ -1,0 +1,38 @@
+#solutions {
+    padding-top: 65px;
+}
+
+.solution {
+    border: thin solid black;
+    text-align: center;
+    &__img-block {
+        border: thin solid red;
+        // width: 200px;
+        height: 300px;
+    }
+
+    &__desc {
+        font-family: $ffPFAgoraSlabPro;
+        color:  #333333;
+    }
+
+    &__btn {
+        display: inline-block;
+        border-radius: 8px;
+        border: thin solid #d8d9db;
+        background-color: rgba(235, 145, 79, 0);
+        width: 248px;
+        height: 48px;
+        font-family: $ffOpenSans-Bold;
+        color:  #162441;
+        font-size: .875em;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        text-align: center;
+        &:hover {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #162441;
+        }
+    }
+}

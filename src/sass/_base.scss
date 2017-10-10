@@ -39,6 +39,8 @@ a {
 
     &__subtitle {
         font-family: $ffOpenSans-Semibold;
+        font-size: .875em;
+        letter-spacing: 3px;
 
         &--light {
             color: #ffffff;
@@ -47,5 +49,13 @@ a {
         &--gray {
             color: #959595;
         }
+    }
+
+    &__line {
+        margin: auto;
+        margin-top: 27px;
+        width: 280px;
+        height: 1px;
+        background-color: #ffffff;
     }
 }
