@@ -2,13 +2,19 @@
     padding-top: 65px;
 }
 
+.solutions-set {
+    margin-top: 70px;
+}
+
 .solution {
-    border: thin solid black;
     text-align: center;
+    margin: 0;
+    margin-bottom: 65px;
+    
+
     &__img-block {
-        border: thin solid red;
-        // width: 200px;
         height: 300px;
+        
     }
 
     &__desc {
@@ -17,12 +23,12 @@
     }
 
     &__btn {
+        margin-top: 20px;
         display: inline-block;
         border-radius: 8px;
         border: thin solid #d8d9db;
         background-color: rgba(235, 145, 79, 0);
-        width: 248px;
-        height: 48px;
+        min-width: 248px;
         font-family: $ffOpenSans-Bold;
         color:  #162441;
         font-size: .875em;

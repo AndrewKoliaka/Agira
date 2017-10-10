@@ -10,7 +10,10 @@
 .recipes-type {
     text-align: center;
     margin-top: 70px;
-    &__icon {}
+    &__icon {
+        width: 53px;
+        height: 53px;
+    }
     &__description {
         font-family: $ffPFAgoraSlabPro;
         font-size: 1.125em;
