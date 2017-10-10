@@ -82,7 +82,7 @@
             border-bottom-color: $orange;
         }
     }
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1200px) {
         &__el {
             margin-left: 30px;
         }
@@ -132,6 +132,10 @@
     position: absolute;
     bottom: -40px;
     height: 100%;
+
+    @media screen and (max-width: 1200px) {
+        bottom: -110px;
+    }
 }
 
 .header__img {
@@ -141,27 +145,50 @@
         height: 669px;
         border: 18px solid #2f3e5f;
         border-bottom: none;
-        bottom: -585px;
+        bottom: -584px;
         right: 105px;
         box-sizing: border-box;
         background-color: rgba(36, 43, 66, 0);
         z-index: 1;
+
+        @media screen and (max-width: 1200px) {
+            right: 50px;
+            bottom: -586px;
+            height: 550px;
+            width: 440px;
+        }
     }
     &--meat {
         width: 400px;
         top: -70px;
         right: 140px;
         z-index: 2;
+
+        @media screen and (max-width: 1200px) {
+            top: 83px;
+            right: 90px;
+            height: 500px;
+            width: auto;
+        }
     }
     &--green1 {
         top: -80px;
         left: -80px;
         z-index: 4;
+
+        @media screen and (max-width: 1200px){
+            top: -12px;
+        }
     }
     &--green2 {
         bottom: -440px;
         right: 116px;
         z-index: 3;
+
+        @media screen and (max-width: 1200px){
+            bottom: -555px;
+            right: 46px;
+        }
     }
     &--mushrooms {
         top: 100px;
