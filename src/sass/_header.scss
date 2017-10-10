@@ -13,6 +13,10 @@
         .orange {
             color: $orange;
         }
+
+        @include respond-to(tablet){
+            font-size: 1em;
+        }
     }
 }
 
@@ -38,6 +42,7 @@
         border: 5px solid #2c3a5a;
         border-radius: 8px;
         background-color: $orange;
+        transition: $tr3s;
         &:hover {
             text-decoration: inherit;
             color: inherit;
@@ -52,8 +57,9 @@
 .site-nav__menu-trigger {
     position: absolute;
     cursor: pointer;
-    top: -100px;
-    right: 10px;
+    font-size: 2em;
+    top: -80px;
+    right: 30px;
 }
 
 .header-menu {

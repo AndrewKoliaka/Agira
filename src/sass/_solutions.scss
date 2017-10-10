@@ -35,10 +35,16 @@
         text-transform: uppercase;
         padding: 15px 20px;
         text-align: center;
+        transition: $tr3s;
         &:hover {
             color: #ffffff;
             text-decoration: none;
             background-color: #162441;
+        }
+
+        @media screen and (max-width: 1050px){
+            min-width: 200px;
+            padding: 10px 12px;
         }
     }
 }

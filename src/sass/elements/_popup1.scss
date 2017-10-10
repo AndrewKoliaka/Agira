@@ -1,53 +1,54 @@
-.popup1 {
+.popup1__content {
     @extend .popup;
-
     text-align: center;
     background-color: #ffffff;
     border-radius: 10px;
-    padding-top: 40px;
     padding-bottom: 40px;
     border: 1px solid red;
     z-index: 9999;
     h2 {
+        margin-top: 40px;
         font-family: $ffPFAgoraSlabPro;
         font-size: 1.5em;
         margin-bottom: 35px;
+        @include respond-to(tablet) {
+            font-size: .9em;
+            margin-top: 45px;
+        }
     }
-
     table {
         border-collapse: collapse;
         color: #666666;
-        td, th {
+        padding: 0;
+        td,
+        th {
             border: 1px solid gray;
             padding: 10px;
-
-            @include respond-to(mobile){
-                td, th {
-                    padding: 0px;
-                }
-                
+            @include respond-to(mobile) {
+                font-size: .8em;
+                padding: 0;
             }
         }
-
         th {
             font-family: $ffOpenSans-Regular;
         }
-
         td {
             font-family: $ffPFAgoraSlabPro;
         }
     }
-
     .close-btn {
         position: absolute;
         right: 20px;
         top: 35px;
         color: black;
         font-size: 2em;
+        @include respond-to(tablet) {
+            top: 10px;
+        }
     }
-
     @include respond-to(wide) {
-        width: 80%;
+        width: 70%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
 }

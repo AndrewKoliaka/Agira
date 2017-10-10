@@ -39,6 +39,7 @@
 .footer {
     background-color: $orange;
     color: #ffffff;
+    text-align: center;
     .logo {
         width: auto;
         height: 60px;
@@ -46,14 +47,27 @@
     }
     &__address-wrapper {
         float: right;
+
+        @include respond-to(tablet) {
+            padding: 20px 0;
+            float: none;
+        }
     }
     &__address {
         margin-top: 35px;
         font-family: $ffPFAgoraSlabPro;
         font-weight: 600;
         font-style: normal;
+
+        @include respond-to(tablet) {
+            margin-top: 10px;
+        }
     }
     .info {
+        @include respond-to(tablet) {
+            line-height: 2em;
+        }
+
         line-height: 118px;
         a {
             color: #ffffff;

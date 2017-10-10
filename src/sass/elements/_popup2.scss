@@ -1,4 +1,4 @@
-.popup2 {
+.popup2__content {
     @extend .popup;
     width: 360px;
     height: 360px;
@@ -17,5 +17,9 @@
     .section__subtitle {
         letter-spacing: 1px;
         line-height: 16px;
+    }
+
+    @media screen and (max-width: 380px){
+        width: 100%;
     }
 }
