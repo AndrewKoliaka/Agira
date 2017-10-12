@@ -1,28 +1,29 @@
 .order {
-    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 70px;
     background-image: url('../img/pepper_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    text-align: center;
 
-    @media screen and (max-width: 767px) {
+    @include respond-to(phone-lend){
         padding: 40px 0;
     }
+
     &__desc {
         display: block;
         margin: auto;
         margin-top: 25px;
+        padding: 10px 0;
+        border-radius: 8px;
+        background-color: #162441;
         font-family: $ffPFAgoraSlabPro;
         color: #ffffff;
         font-size: 1.5em;
         font-weight: 400;
         text-align: center;
-        padding: 10px 0;
-        border-radius: 8px;
-        background-color: #162441;
-
+        
         @include respond-to(tablet){
             font-size: 1em;
         }

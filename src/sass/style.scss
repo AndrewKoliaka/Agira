@@ -7,6 +7,7 @@
 @import "utils/mixins";
 @import "utils/helpers";
 @import "utils/fonts";
+@import "utils/icons";
 
 
 //Подключение файлов из папки elements
@@ -15,7 +16,6 @@
 
 //Подключение основных файлов
 @import "base";
-@import "icons";
 @import "header";
 @import "recipes";
 @import "order";

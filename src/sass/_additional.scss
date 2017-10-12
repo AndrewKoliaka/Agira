@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @respond-to(tablet){
+    @include respond-to(tablet){
         padding: 0;
     }
 
@@ -31,7 +31,6 @@
     }
 
     &:nth-of-type(2) {
-        height: 566px;
         background-image: url('../img/additional2.png');
 
         @include respond-to(tablet){

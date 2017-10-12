@@ -1,21 +1,21 @@
 .full-order {
+    padding-top: 55px;
+    padding-bottom: 70px;
     color: #ffffff;
     background-image: url('../img/middle_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 55px;
-    padding-bottom: 70px;
     text-align: center;
 
-    @media screen and (max-width: 767px) {
+    @include respond-to(phone-lend) {
         padding: 40px 0;
     }
 
     &__desc {
-        margin-top: 30px;
         display: block;
         width: 100%;
+        margin-top: 30px;
         letter-spacing: 3px;
         font-family: $ffPFAgoraSlabPro;
         text-align: center;
