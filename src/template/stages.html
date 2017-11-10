@@ -5,7 +5,9 @@
         </div>
         <ul class="slider col-lg-8">
             <li class="slide">
-                <object class="slide__icon" type="image/svg+xml" data="../img/icon1.svg"></object>
+                <svg class="slide__icon">
+                    <use xlink:href="img/sprite.svg#icon1"></use>
+                </svg>
                 <p class="slide__desc">Обсуждаем с клиентом наличие неудовлетворённости по
                     <br> используемым добавкам (стабильно ли и качественные показатели
                     <br> конечной продукции, есть ли заинтересованность в удешевлении
@@ -13,7 +15,9 @@
                 </p>
             </li>
             <li class="slide">
-                <object class="slide__icon" type="image/svg+xml" data="../img/icon3.svg"></object>
+                <svg class="slide__icon">
+                    <use xlink:href="img/sprite.svg#icon3"></use>
+                </svg>
                 <p class="slide__desc">Обсуждаем с клиентом наличие неудовлетворённости по
                     <br> используемым добавкам (стабильно ли и качественные показатели
                     <br> конечной продукции, есть ли заинтересованность в удешевлении
@@ -22,15 +26,19 @@
             </li>
         </ul>
         <div class="controls">
-            <a class="control control--left icon" href="#">
-                <i class="icon icon-prev"></i>
-            </a>
-            <a class="control control--right icon" href="#">
-                <i class="icon icon-next"></i>
-            </a>
+            <div class="controls__control controls__control--left">
+                <svg class="controls__icon">
+                    <use xlink:href="img/sprite.svg#angle-right"></use>
+                </svg>
+            </div>
+            <div class="controls__control controls__control--right">
+                <svg class="controls__icon">
+                    <use xlink:href="img/sprite.svg#angle-right"></use>
+                </svg>
+            </div>
         </div>
     </div>
-    <div class="hidden-md hidden-sm hidden-xs">
+    <div class="hidden-md hidden-sm">
         <img id="left-img" src="img/pepper3.png" alt="pepper">
         <img id="right-img" src="img/greenery3.png" alt="greenery">
     </div>

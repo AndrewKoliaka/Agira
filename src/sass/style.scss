@@ -1,13 +1,11 @@
 //Подключение библиотек
 @import "../../node_modules/normalize.css/normalize";
 
-
 //Вспомогательные файлы, так же то что генерируется галпом
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/helpers";
 @import "utils/fonts";
-@import "utils/icons";
 
 
 //Подключение файлов из папки elements

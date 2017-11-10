@@ -17,12 +17,12 @@ $(document)
             autoplaySpeed: 5000
         });
 
-        $('.control--left').click(function(event) {
+        $('.controls__control--left').click(function(event) {
             event.preventDefault();
             $('.slider').slick('slickPrev');
         });
 
-        $('.control--right').click(function(event) {
+        $('.controls__control--right').click(function(event) {
             event.preventDefault();
             $('.slider').slick('slickNext');
         });
@@ -75,7 +75,6 @@ $(document)
         $('.popup2__content').click(function(event) {
             event.stopPropagation();
         });
-
 
         $('.js-send-form').on('click', function(event) {
             event.preventDefault();
